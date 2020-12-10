@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+*{
+    
+    font-family: 'Nunito', sans-serif;
+   
+}
+
+#massage{
+    width: 50%;
+    margin-left: 20%;
+}
+
+
+h4{
+    color: black;
+    margin-left: 30%;
+    margin-top: 10px;
+    width: fit-content;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 12px;
+
+}
+
+input[type=text]{
+    font-size: large;
+  }
+
+#form__input {
+  
+   width: 25%;
+   height: 35px;
+   margin: 1%;
+   margin-left: 32%;
+   border: 2px solid  #7122FA;  
+   border-radius: 12px;
+   padding-left: 10px;
+   outline: none;
+
+
+  }
+  body{
+    
+     background-image: url('../../MyBot/src/assets/BG.jpg');    
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+      
+  }
+
+ 
+  button {
+    width: 10%;
+    background-color: white;
+    color: black;
+    padding: 12px 16px;
+    text-align: center;
+    margin: 10px 10px ;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;    
+  }
+
+  button:hover {
+    background-color: white;
+    color: #7122FA;
+    border: 2px solid #7122FA;    
+  }
+
+
+.chatarea-inner {
+    float: left;
+    width: 50%;
+    padding: 8px;
+    color: white;
+    position: relative;
+    margin: 5px 0;
+    outline: none; 
+}
+
+
+.chatarea-inner.btn{
+    background: white ;
+    color: black;
+    float: right;
+    margin-right: 26%;
+    outline: none;
+}
+
+.chatarea-inner.btn:hover{
+    background-color: #7122FA;
+    color:white;
+    border: 2px solid black;    
+}
+
+
+.chatarea-inner.btn:focus{
+    background-color: #7122FA;
+    color:white;
+    border: 2px solid black; 
+}
+
+
+.chatarea-inner.user{
+    background: #7122FA;
+    color: white;
+    margin-right: 8px;
+    float: right;
+    outline: none;
+}
+
+
+.chatarea-inner.chatbot{
+    background: black;
+    color: white;
+    float: left;
+    margin-left: 10px;
+    border-radius: 12px 12px 12px 0;
+    outline: none;
+    margin-top: 15px;
+  
+    
+}
+
+.time{ 
+    margin-bottom: -5px;
+    margin-left: -10px;
+    float:right ;
+    font-size: x-small;
+}
+
+
+.chatarea-inner.user:before {
+    content: '';
+    position: absolute;
+    border-left: 20px solid #7122FA;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;    
+    bottom: 0;
+    right: -20px;
+}
+
+
+.chatarea-inner.chatbot:before{
+    content: '';
+    position: absolute;
+    border-right: 20px solid black;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;    
+    bottom: 0;
+    left: -20px;
+    
+}
+
+.chatarea-inner.chatbot2:before{
+    content: '';
+    position: absolute;
+    border-right: 20px solid black;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;    
+    bottom: 0;
+    left: -20px;    
+}
+
+
+.chatbot-area .chatarea-inner{float: right;}
+
+.h3, .h2{
+    background-color: #7122FA;
+    color:white;
+    float: left;
+    width: 52%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid silver;
+}
+
+.h2{
+    width:55%;
+}
+
+
+#gifImg{
+    height: 120px;
+    width: 180px;
+    border-radius: 12px;
+    padding: 3px;
+    margin: 0 -14px;
+}
+
+#opID{
+
+    border: 2px solid black;
+
+}
+
+
+#opID:hover{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.chatImg{
+    background-color: #7122FA;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px ;
+    float: left;
+    padding: 4px;
+    margin-top: 48px;
+}
+
+.chatImg2{
+    background-color: #7122FA;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px ;
+    float: left;
+    padding: 4px;
+    margin-top: 170px;
+
+}
+
+.chatImg3{
+    background-color: #7122FA;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px ;
+    float: left;
+    padding: 4px;
+    margin-top: 48px;
+    margin-right: 150px;
+}
+
+.space{
+    margin: 5% 0;
+}
+
+
+/* header Styling */
+ul{
+    list-style-type: none;
+    margin-top: 0;
+    display: flex;    
+}
+
+header{
+    background-color: #7122FA;
+    color: white;
+    width: 58%;
+    height:82px;
+    margin-left: 188px;
+    margin-top: 15px;
+    border-radius: 15px 50px;
+      
+}
+
+#pizzaimg{
+    border-radius: 57px;
+    height: 65px;
+    /* width: 100px; */
+    padding: 8px 10px;
+}
+
+
+
+img{
+    border-radius: 36px;
+    height:50px;
+    padding: 6px;   
+    padding-top:  15px;
+    margin-left: -10px;
+}
+
+#heading{
+    font-weight: bolder;
+    font-size: larger;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    align-self: center;
+    
+
+}
+
+
+
