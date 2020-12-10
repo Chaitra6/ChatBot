@@ -1,4 +1,6 @@
-# MyBot
+Documentation Link : https://docs.google.com/document/d/1HoKAyDFi-DexYGfXd53_jwIKMxOE236qB70SCVMmB3A/edit?usp=sharing
+
+# YoYo Bot
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.4.
 
