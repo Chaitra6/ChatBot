@@ -729,11 +729,11 @@ export class ChatbotComponent implements OnInit {
 
         var d = new Date();        
         this.orderData.orderTime =  d.getHours()+":"+d.getMinutes()+" "+d.getDate;        
-        var maxDTime =  d.getHours() +":"+ d.getMinutes() + 30;    
+         
 
               
           
-          this.api.putPizzaDetails(this.orderData.orderid,this.orderData.ptype, this.orderData.pname, this.orderData.psize, this.orderData.pToppings, this.orderData.pCount, this.orderData.orderTime, this.orderData.price, maxDTime ).subscribe( data =>{
+          this.api.putPizzaDetails(this.orderData.orderid,this.orderData.ptype, this.orderData.pname, this.orderData.psize, this.orderData.pToppings, this.orderData.pCount, this.orderData.orderTime, this.orderData.price).subscribe( data =>{
             console.log(data);
           },
           error => console.log(error));
