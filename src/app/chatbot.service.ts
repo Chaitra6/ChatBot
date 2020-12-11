@@ -8,10 +8,10 @@ import { Observable } from 'rxjs';
 export class ChatbotService {
 
 
-  private allDetailsUrl = 'http://localhost:8080/allDetails';
-  private baseUrl = 'http://localhost:8080/event';
-  private pizzaUrl = 'http://localhost:8080/pizzadetails';
-  private userUrl = 'http://localhost:8080/userdetails';
+  private allDetailsUrl = 'http://3.18.127.80:3000/allDetails';
+  private baseUrl = 'http://3.18.127.80:3000/event';
+  private pizzaUrl = 'http://3.18.127.80:3000/pizzadetails';
+  private userUrl = 'http://3.18.127.80:3000/userdetails';
 
   constructor(private http: HttpClient) { }
 
@@ -24,8 +24,8 @@ export class ChatbotService {
   }
 
   putPizzaDetails(oid: String, pType:string, pName:string,
-    pSize:string, pToppings:string, pCount:string, orderTime:string, price:number, maxDeliveryTime:any ): Observable<any> {
-   console.log("data",oid,pType,pName,pSize,pToppings,pCount,orderTime, price, maxDeliveryTime)
+    pSize:string, pToppings:string, pCount:string, orderTime:string, price:number): Observable<any> {
+   console.log("data",oid,pType,pName,pSize,pToppings,pCount,orderTime, price)
    const value ={
      oid : oid,
      pType : pType,
@@ -34,8 +34,8 @@ export class ChatbotService {
      pToppings: pToppings,
      pCount : pCount,
      orderTime : orderTime,
-     price : price,
-     maxDeliveryTime : maxDeliveryTime      
+     price : price
+      
 
    };
    return this.http.post(`${this.pizzaUrl}`,value);
@@ -56,22 +56,5 @@ export class ChatbotService {
 
  
 
-  // putDetails(id: String, name:string, email:string, phno:string, address:string, ptype:string, pName:string,
-  //    pSize:string, pToppings:string, pCount:string ): Observable<any> {
-  //   console.log("data",id,name,email,phno,address,ptype,pName,pSize,pToppings,pCount)
-  //   const value ={
-  //     id : id,
-  //     name : name,
-  //     email : email,
-  //     phno: phno,
-  //     address : address,
-  //     ptype : ptype,
-  //     pName: pName,
-  //     pSize: pSize,
-  //     pToppings: pToppings,
-  //     pCount : pCount      
-
-  //   };
-  //   return this.http.post(`${this.detailUrl}`,value);
-  // }
+ 
 }
