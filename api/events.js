@@ -39,7 +39,7 @@ function createRouter(db) {
 
   router.post('/pizzadetails/', function (req, res, next) {
     db.query(
-      'INSERT INTO orderdetails(orderID,pType,pName,pSize,pToppings,pCount,orderTime,price,maxDeliveryTime)VALUES(?,?,?,?,?,?,?,?,?)',      
+      'INSERT INTO orderdetails(orderID,pType,pName,pSize,pToppings,pCount,orderTime,price)VALUES(?,?,?,?,?,?,?,?)',      
       [req.body.oid,req.body.pType, req.body.pName, req.body.pSize, req.body.pToppings, req.body.pCount, req.body.orderTime, req.body.price, req.body.maxDeliveryTime],
       (error, results) => {
         if (error) {
