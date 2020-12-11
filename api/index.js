@@ -9,14 +9,14 @@ const connection = mysql.createConnection({
   host     : 'localhost',
   port     :  3306,
   user     : 'root',
-  password : 'rootCHC6',
+  password : 'Root@123',
   database : 'chatbot',
 
 });
 
 connection.connect();
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000 ;
 
 const app = express()
   .use(cors())
